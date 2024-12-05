@@ -8,7 +8,7 @@ const Demo = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-8 p-8">
       <main className="flex flex-col items-center w-full mt-4 gap-2 max-w-4xl">
-        <span className="text-xl font-semibold">Instructions to generate web packets w/ Scapy</span>
+        <span className="text-xl font-semibold">Generate web packets w/ Scapy</span>
         <ScapyForm />
       </main>
 
