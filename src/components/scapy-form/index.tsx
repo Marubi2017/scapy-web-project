@@ -58,6 +58,16 @@ const ScapyForm = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     // Here you'll add the API call to your backend
+    fetch('/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ packetType: selectedPacket, ...formData })
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error('Error:', error));
   };
 
   return (

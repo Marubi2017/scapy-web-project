@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import ScapyForm from "@/components/scapy-form";
+import ScapyForm from "../../components/scapy-form";
 
 const Demo = () => {
   return (
@@ -11,7 +11,7 @@ const Demo = () => {
         <span className="text-xl font-semibold">Instructions to generate web packets w/ Scapy</span>
         <ScapyForm />
       </main>
-      
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"

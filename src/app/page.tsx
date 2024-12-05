@@ -9,22 +9,22 @@ const Home = () => {
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
-          className="dark item-center jusqify-center"
+          className="dark items-center justify-items-center"
           src="/images/scapy_logo.png"
           alt="Scapy.net logo"
-          width={300}
-          height={150} 
+          width={450}
+          height={150}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside list-decimal text-medium text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            Get started by editing{" "}
+            Easily generate IP, ARP and DNS Networks using {" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
+              scapy.com
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>Save your packets and see your changes captured through WireShark.</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -39,15 +39,15 @@ const Home = () => {
               width={20}
               height={20}
             />
-            Demo
+            Demo Here
           </Link>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://scapy.readthedocs.io/en/latest/index.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            Read the Scapy docs
           </a>
         </div>
       </main>
